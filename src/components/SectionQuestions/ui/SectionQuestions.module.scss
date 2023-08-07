@@ -1,0 +1,54 @@
+.sectionQuestions {
+	padding-bottom: 150px;
+}
+
+.inner {
+	display: grid;
+	grid-template-columns: 370px auto;
+}
+
+.title {
+	font-family: 'Yeseva One', cursive;
+	font-size: 40px;
+	font-weight: 400;
+	color: #000;
+	margin-bottom: 15px;
+}
+
+.accordeon_item {
+	background-color: #ffffff;
+	margin-bottom: 10px;
+}
+
+@media(max-width: 1000px) {
+	.inner {
+		grid-template-columns: 300px auto;
+	}
+}
+
+@media(max-width: 768px) {
+	.inner {
+		grid-template-columns: 200px auto;
+	}
+
+	.title {
+		font-size: 15px;
+	}
+}
+
+@media(max-width: 550px) {
+	.inner {
+		grid-template-columns: auto;
+	}
+
+	.descr {
+		width: 300px;
+		margin: 0 auto;
+		text-align: center;
+		padding-bottom: 30px;
+	}
+
+	.sectionQuestions {
+		padding-bottom: 50px;
+	}
+}

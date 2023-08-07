@@ -1,0 +1,205 @@
+.sectionAboutUs {
+	background-color: #A5978E;
+	padding: 50px 0;
+	color: #FAFAFA;
+	margin-bottom: 150px;
+}
+
+.inner {
+	display: flex;
+	align-items: center;
+}
+
+.content {
+	min-width: 370px;
+}
+
+.title {
+	font-family: 'Yeseva One', cursive;
+	font-size: 40px;
+	margin-bottom: 15px;
+	font-weight: 400;
+}
+
+.text_1 {
+	margin-bottom: 20px;
+}
+
+.list {
+	display: flex;
+	align-items: center;
+	gap: 0 20px;
+	padding-left: 110px;
+	padding-bottom: 48px;
+	position: relative;
+}
+
+.list::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-image: url(shared/assets/images/section-decore.png);
+	width: 22px;
+	height: 30px;
+}
+
+.list::after {
+	content: '';
+	position: absolute;
+	left: 22px;
+	bottom: 10px;
+	background-color: #7B6152;
+	width: 1000%;
+	height: 1px;
+}
+
+.list_item_img {
+	margin-bottom: 10px;
+}
+
+.list_item_text {
+	font-size: 11px;
+}
+
+@media (max-width: 1000px) {
+	.content {
+		min-width: 300px;
+	}
+
+	.list {
+		padding-left: 20px;
+	}
+}
+
+@media(max-width: 768px) {
+	.content {
+		min-width: 200px;
+	}
+
+	.list {
+		padding-left: 50px;
+		padding-bottom: 33px;
+		gap: 0 10px;
+	}
+
+	.title {
+		font-size: 15px;
+		margin-bottom: 20px;
+	}
+
+	.text {
+		font-size: 10px;
+	}
+
+	.list::before {
+		margin-left: 28px;
+	}
+
+	.list::after {
+		left: 50px;
+	}
+
+	.list_item_img {
+		margin-bottom: 6px;
+	}
+
+	.list_item_text {
+		font-size: 6px;
+	}
+
+	.list_item_img_1 {
+		width: 120px;
+	}
+
+	.list_item_img_2 {
+		width: 190px;
+	}
+
+	.list_item_img_3 {
+		width: 120px;
+	}
+}
+
+@media(max-width: 640px) {
+	.sectionAboutUs {
+		margin-bottom: 50px;
+	}
+}
+
+@media (max-width: 480px) {
+	.content {
+		min-width: 172px;
+	}
+
+	.list {
+		padding-left: 17px;
+		padding-bottom: 50px;
+		gap: 0 5px;
+		align-items: flex-end;
+	}
+
+	.list::before {
+		margin-left: 5px;
+	}
+
+	.list::after {
+		left: 27px;
+	}
+
+	.list_item_text {
+		display: none;
+	}
+
+	.list_item_img_1 {
+		width: 80px;
+	}
+
+	.list_item_img_2 {
+		width: 140px;
+	}
+
+	.list_item_img_3 {
+		width: 80px;
+	}
+
+	.inner {
+		align-items: flex-end;
+	}
+}
+
+@media (max-width: 360px) {
+	.content {
+		min-width: 234px;
+	}
+
+	.text {
+		font-size: 8px;
+	}
+
+	.title {
+		margin-bottom: 10px;
+	}
+
+	.list {
+		padding-left: 25px;
+		padding-bottom: 30px;
+		gap: 0 15px;
+	}
+
+	.list::before {
+		margin-left: 15px;
+	}
+
+	.list::after {
+		left: 37px;
+	}
+
+	.sectionAboutUs {
+		padding: 25px 0 10px;
+	}
+
+	.list_item_img_2 {
+		display: none;
+	}
+}
