@@ -1,16 +1,10 @@
-import { classNames } from 'shared/lib/classNames/classNames';
 import { useEffect, useState } from 'react';
 import cls from './SectionCerts.module.scss';
 import cert_img_1 from 'shared/assets/images/cert-1.png';
 import cert_img_2 from 'shared/assets/images/cert-2.png';
 import cert_img_3 from 'shared/assets/images/cert-3.png';
 
-
-interface SectionCertsProps {
-	className?: string
-}
-
-export const SectionCerts = ({ className }: SectionCertsProps) => {
+export const SectionCerts = () => {
 
 	const [activeSlide, setActiveSlide] = useState(1);
 
@@ -41,8 +35,8 @@ export const SectionCerts = ({ className }: SectionCertsProps) => {
 	}, [activeSlide]);
 
 	return (
-		<section className={classNames(cls.sectionCerts, {}, [className])}>
-			<div className={classNames(cls.inner, {}, ['container'])}>
+		<section className={cls.sectionCerts}>
+			<div className={cls.inner}>
 				<div className={cls.descr}>
 					<h2 className={cls.title}>
 						Сертификаты качества

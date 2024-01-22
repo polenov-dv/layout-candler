@@ -1,18 +1,13 @@
-import { classNames } from 'shared/lib/classNames/classNames';
 import cls from './SectionTeam.module.scss';
 import team_img_1 from 'shared/assets/images/team-1.jpg';
 import team_img_2 from 'shared/assets/images/team-2.jpg';
 import team_img_3 from 'shared/assets/images/team-3.jpg';
 import team_img_4 from 'shared/assets/images/team-4.jpg';
 
-interface SectionTeamProps {
-	className?: string
-}
-
-export const SectionTeam = ({ className }: SectionTeamProps) => {
+export const SectionTeam = () => {
 	return (
-		<section className={classNames(cls.sectionTeam, {}, [className])}>
-			<div className={classNames(cls.inner, {}, ['container'])}>
+		<section id='sectionTeam' className={cls.sectionTeam}>
+			<div className={cls.inner}>
 				<div className={cls.descr}>
 					<h2 className={cls.title}>
 						Наши преподаватели

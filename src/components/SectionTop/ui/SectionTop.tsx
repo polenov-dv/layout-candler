@@ -1,17 +1,12 @@
-import { classNames } from 'shared/lib/classNames/classNames';
 import cls from './SectionTop.module.scss';
 import top_img_l from 'shared/assets/images/top-l.png';
 import top_img_m from 'shared/assets/images/top-m.png';
 import top_img_c from 'shared/assets/images/top-c.png';
 
-interface SectionTopProps {
-	className?: string
-}
-
-export const SectionTop = ({ className }: SectionTopProps) => {
+export const SectionTop = () => {
 	return (
-		<section className={classNames(cls.sectionTop, {}, [])}>
-			<div className={classNames(cls.inner, {}, ['container'])}>
+		<section className={cls.sectionTop}>
+			<div className={cls.inner}>
 				<div className={cls.content}>
 					<h3 className={cls.title}>
 						Создайте атмосферу уюта и гармонии!

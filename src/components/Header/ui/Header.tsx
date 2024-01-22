@@ -1,14 +1,9 @@
-import { classNames } from 'shared/lib/classNames/classNames';
 import cls from './Header.module.scss';
 import logo from 'shared/assets/images/logo.png';
 import Phone from 'shared/assets/icons/phone.svg';
 import { useState } from 'react';
 
-interface HeaderProps {
-	className?: string
-}
-
-export const Header = ({ className }: HeaderProps) => {
+export const Header = () => {
 
 	const [openMenu, setOpenMenu] = useState(false);
 
@@ -17,8 +12,8 @@ export const Header = ({ className }: HeaderProps) => {
 		: cls.menu_list;
 
 	return (
-		<header className={classNames(cls.header, {}, [className])}>
-			<div className={classNames(cls.header_inner, {}, ['container'])}>
+		<header className={cls.header}>
+			<div className={cls.header_inner}>
 				<a href="#" className={cls.logo}>
 					<img src={logo} alt="Логотип" />
 				</a>
@@ -31,12 +26,12 @@ export const Header = ({ className }: HeaderProps) => {
 						<span></span>
 					</button>
 					<ul className={contentClassName}>
-						<li className={cls.menu_list_item}><a href="#">О нас</a></li>
-						<li className={cls.menu_list_item}><a href="#">Каталог</a></li>
-						<li className={cls.menu_list_item}><a href="#">Команда</a></li>
-						<li className={cls.menu_list_item}><a href="#">Отзывы</a></li>
-						<li className={cls.menu_list_item}><a href="#">Курси</a></li>
-						<li className={cls.menu_list_item}><a href="#">Контакти</a></li>
+						<li className={cls.menu_list_item}><a href="#sectionAboutUs">О нас</a></li>
+						<li className={cls.menu_list_item}><a href="#sectionProducts">Каталог</a></li>
+						<li className={cls.menu_list_item}><a href="#sectionTeam">Команда</a></li>
+						<li className={cls.menu_list_item}><a href="#sectionComments">Отзывы</a></li>
+						<li className={cls.menu_list_item}><a href="#sectionCourse">Курси</a></li>
+						<li className={cls.menu_list_item}><a href="#sectionContacts">Контакти</a></li>
 					</ul>
 				</nav>
 				<a className={cls.phone} href="tel:+79029999999" >

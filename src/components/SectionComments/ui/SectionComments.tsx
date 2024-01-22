@@ -1,4 +1,3 @@
-import { classNames } from 'shared/lib/classNames/classNames';
 import cls from './SectionComments.module.scss';
 import product_img_1 from 'shared/assets/images/product-1.jpg';
 import product_img_2 from 'shared/assets/images/product-2.jpg';
@@ -9,11 +8,7 @@ import button_img from 'shared/assets/images/button.png';
 import Instagram from 'shared/assets/icons/instagram.svg';
 import { useEffect, useState } from 'react';
 
-interface SectionCommentsProps {
-	className?: string
-}
-
-export const SectionComments = ({ className }: SectionCommentsProps) => {
+export const SectionComments = () => {
 
 	const [activeSlide, setActiveSlide] = useState(1);
 
@@ -32,8 +27,8 @@ export const SectionComments = ({ className }: SectionCommentsProps) => {
 	}, [activeSlide]);
 
 	return (
-		<section className={classNames(cls.sectionComments, {}, [className])}>
-			<div className={classNames(cls.inner, {}, ['container'])}>
+		<section id='sectionComments' className={cls.sectionComments}>
+			<div className={cls.inner}>
 				<div className={cls.descr}>
 					<h2 className={cls.title}>
 						Отзывы от клиентов

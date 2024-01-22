@@ -1,5 +1,4 @@
 import "./styles/index.scss"
-import { classNames } from 'shared/lib/classNames/classNames';
 import { Header } from "components/Header";
 import { Footer } from "components/Footer";
 import { SectionTop } from "components/SectionTop";
@@ -17,7 +16,7 @@ import { SectionContacts } from "components/SectionContacts";
 const App = () => {
 
 	return (
-		<div className={classNames('app', {}, [])}>
+		<div className='app container'>
 			<Header />
 			<main>
 				<SectionTop />

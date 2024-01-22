@@ -1,19 +1,13 @@
-import { classNames } from 'shared/lib/classNames/classNames';
 import cls from './SectionProducts.module.scss';
-
 import product_img_1 from 'shared/assets/images/product-1.jpg';
 import product_img_2 from 'shared/assets/images/product-2.jpg';
 import product_img_3 from 'shared/assets/images/product-3.jpg';
 import product_img_4 from 'shared/assets/images/product-4.jpg';
 
-interface SectionProductsProps {
-	className?: string
-}
-
-export const SectionProducts = ({ className }: SectionProductsProps) => {
+export const SectionProducts = () => {
 	return (
-		<section className={classNames(cls.sectionProducts, {}, [className])}>
-			<div className={classNames(cls.inner, {}, ['container'])}>
+		<section id='sectionProducts' className={cls.sectionProducts}>
+			<div className={cls.inner}>
 				<div className={cls.descr}>
 					<h2 className={cls.title}>
 						Наши товары

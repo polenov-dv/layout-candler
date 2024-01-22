@@ -1,4 +1,3 @@
-import { classNames } from 'shared/lib/classNames/classNames';
 import cls from './SectionSteps.module.scss';
 import step_img_1 from "shared/assets/images/step-1.jpg";
 import step_img_2 from "shared/assets/images/step-2.jpg";
@@ -11,14 +10,10 @@ import step_img_8 from "shared/assets/images/step-8.jpg";
 import step_img_9 from "shared/assets/images/step-9.jpg";
 import step_img_10 from "shared/assets/images/step-10.jpg";
 
-interface SectionStepsProps {
-	className?: string
-}
-
-export const SectionSteps = ({ className }: SectionStepsProps) => {
+export const SectionSteps = () => {
 	return (
-		<section className={classNames(cls.sectionSteps, {}, [className])}>
-			<div className={classNames(cls.inner, {}, ['container'])}>
+		<section className={cls.sectionSteps}>
+			<div className={cls.inner}>
 				<div className={cls.descr}>
 					<h2 className={cls.title}>
 						Этапы создания свечей

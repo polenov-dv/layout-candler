@@ -1,16 +1,11 @@
-import { classNames } from 'shared/lib/classNames/classNames';
 import cls from './SectionCourse.module.scss';
 import course_img_1 from 'shared/assets/images/course-1.jpg';
 import course_img_2 from 'shared/assets/images/course-2.jpg';
 
-interface SectionCourseProps {
-	className?: string
-}
-
-export const SectionCourse = ({ className }: SectionCourseProps) => {
+export const SectionCourse = () => {
 	return (
-		<section className={classNames(cls.sectionCourse, {}, [className])}>
-			<div className={classNames(cls.inner, {}, ['container'])}>
+		<section id='sectionCourse' className={cls.sectionCourse}>
+			<div className={cls.inner}>
 				<div className={cls.descr}>
 					<h2 className={cls.title}>
 						Наши курсы
@@ -25,13 +20,13 @@ export const SectionCourse = ({ className }: SectionCourseProps) => {
 					<div className={cls.content_item}>
 						<div className={cls.content_item_img_wrapper}>
 							<img className={cls.content_item_img} src={course_img_1} alt="Курс 1" />
-							<p className={cls.content_item_img_title + " " + cls.content_item_img_text}>
+							<p className={`${cls.content_item_img_title} ${cls.content_item_img_text}`}>
 								Основы изготовления свечей
 							</p>
-							<p className={cls.content_item_img_time + " " + cls.content_item_img_text}>
+							<p className={`${cls.content_item_img_time} ${cls.content_item_img_text}`}>
 								Обучение-20 ч
 							</p>
-							<p className={cls.content_item_img_price + " " + cls.content_item_img_text}>
+							<p className={`${cls.content_item_img_price} ${cls.content_item_img_text}`}>
 								Цена-40$
 							</p>
 						</div>
@@ -49,13 +44,13 @@ export const SectionCourse = ({ className }: SectionCourseProps) => {
 					<div className={cls.content_item}>
 						<div className={cls.content_item_img_wrapper}>
 							<img className={cls.content_item_img} src={course_img_2} alt="Курс 2" />
-							<p className={cls.content_item_img_title + " " + cls.content_item_img_text}>
+							<p className={`${cls.content_item_img_title} ${cls.content_item_img_text}`}>
 								Искусство ароматерапии
 							</p>
-							<p className={cls.content_item_img_time + " " + cls.content_item_img_text}>
+							<p className={`${cls.content_item_img_time} ${cls.content_item_img_text}`}>
 								Обучение-20 ч
 							</p>
-							<p className={cls.content_item_img_price + " " + cls.content_item_img_text}>
+							<p className={`${cls.content_item_img_price} ${cls.content_item_img_text}`}>
 								Цена-40$
 							</p>
 						</div>

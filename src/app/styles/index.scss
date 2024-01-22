@@ -2,6 +2,7 @@
 
 html {
 	box-sizing: border-box;
+	background-color: #FFF8F3;
 }
 
 *,
@@ -39,13 +40,11 @@ button {
 
 .app {
 	font-family: 'Comfortaa', cursive;
-	//font-family: 'Yeseva One', cursive;
 	font-size: 14px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 1.2;
 	color: #000;
-
 	min-height: 100vh;
 }
 

@@ -1,15 +1,10 @@
-import { classNames } from 'shared/lib/classNames/classNames';
 import cls from './SectionContacts.module.scss';
 import contact_img from 'shared/assets/images/contact.jpg';
 
-interface SectionContactsProps {
-	className?: string
-}
-
-export const SectionContacts = ({ className }: SectionContactsProps) => {
+export const SectionContacts = () => {
 	return (
-		<section className={classNames(cls.sectionContacts, {}, [className])}>
-			<div className={classNames(cls.inner, {}, ['container'])}>
+		<section id='sectionContacts' className={cls.sectionContacts}>
+			<div className={cls.inner}>
 				<form className={cls.form}>
 					<p className={cls.form_title}>
 						Подпишись на наши акции

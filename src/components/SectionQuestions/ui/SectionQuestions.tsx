@@ -1,25 +1,11 @@
-import { useEffect, useState } from 'react';
 import { Accordion } from 'shared/lib/Accordion';
-import { classNames } from 'shared/lib/classNames/classNames';
 import cls from './SectionQuestions.module.scss';
 
-interface SectionQuestionsProps {
-	className?: string
-}
-
-export const SectionQuestions = ({ className }: SectionQuestionsProps) => {
-
-	const [activeAccordeon, setActiveAccordeon] = useState(1);
-
-	useEffect(() => {
-
-		const accordion_title = document.getElementsByClassName(cls.slider_item) as HTMLCollectionOf<HTMLElement>;
-
-	}, [activeAccordeon]);
+export const SectionQuestions = () => {
 
 	return (
-		<div className={classNames(cls.sectionQuestions, {}, [className])}>
-			<div className={classNames(cls.inner, {}, ['container'])}>
+		<div className={cls.sectionQuestions}>
+			<div className={cls.inner}>
 				<div className={cls.descr}>
 					<h2 className={cls.title}>
 						Часто задаваемые вопросы

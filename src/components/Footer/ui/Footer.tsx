@@ -1,4 +1,3 @@
-import { classNames } from 'shared/lib/classNames/classNames';
 import cls from './Footer.module.scss';
 import logo from 'shared/assets/images/logo.png'
 import Facebook from 'shared/assets/icons/facebook.svg';
@@ -6,16 +5,10 @@ import Instagram from 'shared/assets/icons/instagram.svg';
 import Linkedin from 'shared/assets/icons/linkedin.svg';
 import Youtube from 'shared/assets/icons/youtube.svg';
 
-import Logo from 'shared/assets/icons/logo.svg';
-
-interface FooterProps {
-	className?: string
-}
-
-export const Footer = ({ className }: FooterProps) => {
+export const Footer = () => {
 	return (
-		<footer className={classNames(cls.footer, {}, [className])}>
-			<div className={classNames(cls.footer_inner, {}, ['container'])}>
+		<footer className={cls.footer}>
+			<div className={cls.footer_inner}>
 				<a href="#" className={cls.logo}>
 					<img src={logo} alt="Логотип" />
 				</a>

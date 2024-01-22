@@ -1,14 +1,9 @@
-import { classNames } from 'shared/lib/classNames/classNames';
 import cls from './SectionPromo.module.scss';
 
-interface SectionPromoProps {
-	className?: string
-}
-
-export const SectionPromo = ({ className }: SectionPromoProps) => {
+export const SectionPromo = () => {
 	return (
-		<section className={classNames(cls.sectionPromo, {}, [className])}>
-			<div className={classNames(cls.inner, {}, ['container'])}>
+		<section className={cls.sectionPromo}>
+			<div className={cls.inner}>
 				<p className={cls.text}>
 					Покупайте больше, экономьте больше
 				</p>
